@@ -1,0 +1,11 @@
+npm install -g typescript
+npm install -g ts-node
+
+para compilar
+----------------------------------------
+tsc index.ts
+ts-node index.ts
+
+Tarea
+-------------------------------------------
+Aprender clases en typescript
