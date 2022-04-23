@@ -1,0 +1,25 @@
+npm install typescript -D
+npm install express -E => descarga la version exacta
+npm i --save-dev @types/express
+npm install ts-node-dev -D => nodemon
+npm install ts-standard -D
+
+Inicializar el proyecto
+--------------------------------
+npm run tsc -- --init => tsconfig.json
+npm run tsc => compila el codigo a build
+
+
+Config
+---------------------------------------------
+"outDir": "./build",  => lugar donde convierte de TS a JS
+"noUnusedLocals": true, => advierte si tienes un variable sin utilizar
+"noUnusedParameters": true,
+"noImplicitReturns": true, => siempre las funciones deben tener un return sino te advierte.
+"noFallthroughCasesInSwitch": true, => cuando agues un switch debe tener un return.
+"resolveJsonModule": true, => (Add) => reconosca la importacion de json
+
+Datos
+--------------------------------
+import express from 'express' => ESModules
+const express = require('express') => commonjs
